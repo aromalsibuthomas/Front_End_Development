@@ -3,6 +3,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+        <style>
+body{
+   margin:0;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu-icon{
+  display:none;
+}
+.main-navbar{
+ position:fixed;
+ padding: 20px;
+  width:100%;
+  top:0;
+  left:0;
+ 
+  box-sizing:border-box;
+  display:flex;
+  justify-content:space-around;
+  background-color:whitesmoke;
+ 
+  z-index:2;
+}
+.sidebar{
+    margin-top: 10PX;
+  position:fixed;
+  top:-120px;
+  left:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+  width:100%;
+  padding:10px ;
+  background-color:grey;
+z-index:1;
+  transition: top 0.5s ease;
+}
+
+.sidebar a:hover{
+    background-color: white;
+    color: black;
+}
+.sidebar.active{
+  
+  top:50px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* Styles for mobile devices */
+  .menu-icon{
+    display:block;
+  }
+  .hideonmobile{
+    display:none;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablet devices */
+ 
+  
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktop devices */
+}
+
+
+    </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
     <nav class="main-navbar">
