@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <nav class="main-navbar">
+  <a>Brand Nme</a>
+  <a class="hideonmobile">Link 1</a>
+  <a class="hideonmobile">Link 2</a>
+  <a class="hideonmobile">Link 3</a>
+  <a class="hideonmobile">Link 4</a>
+   <button id="menu-icon" class="menu-icon">
+  <i class="fas fa-bars"></i>
+</button>
+</nav>
+<div class="sidebar" id='sidebar'>
+  <a>Link 1</a>
+  <a>Link 2</a>
+  <a>Link 3</a>
+  <a>Link 4</a>
+</div>
+<script>
+    
+  var sidebar = document.getElementById('sidebar');
+    var menuToggle = document.getElementById('menu-icon');
+
+  menuToggle.addEventListener('click',function(){
+    // var isActive = sidebar.classList.contains('active')
+    console.log("Menu icon clicked");
+    sidebar.classList.toggle('active');
+    
+    window.addEventListener('resize', function() {
+  sidebar.classList.remove('active');
+});
+  });
+
+</script>
+</body>
+</html>
