@@ -1,2 +1,3 @@
-# Simple-Resposive-Navbar-With-Hamburger-Menu
-Boilerplate Code For  Responsive Navbar 
+# FRONT END DEVELOPMENT MATERIALS
+## CODE SNIPPETS
+## DOCS
